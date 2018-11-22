@@ -14,5 +14,9 @@
   },
   "devDependencies": {},
   "keywords": [],
-  "description": "test"
+  "description": "test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chiany/test123.git"
+  }
 }
