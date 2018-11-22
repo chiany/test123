@@ -3,6 +3,9 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
+const path = require('path')
+const PORT = process.env.PORT || 5000
+
 // 加入線上人數計數
 let onlineCount = 0;
 
@@ -36,6 +39,6 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(3000, () => {
+app.listen(3000, () => {
     console.log("Server Started. http://localhost:3000");
 });
